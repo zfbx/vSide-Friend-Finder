@@ -62,7 +62,7 @@ var users = [
     { N: "Katie", Dis: "", FB: "kfdake", vSN: [ "maisye" ], M: false },
     { N: "Katrina", Dis: "", FB: "kjgibbers", vSN: [ "Katrinaa", "Katapult" ], M: false },
     { N: "Kayla", Dis: "", FB: "KaylaMeganIhler", vSN: [ "Munchkin_x" ], M: false },
-    { N: "Kayleigh", Dis: "209761601711112192", FB: "xLovelySorrowsx", vSN: [ "Revvenga" ], M: false },
+    { N: "Kayleigh", Dis: "209761601711112192", FB: "", vSN: [ "Revvenga" ], M: false },
     { N: "Kelsey", Dis: "", FB: "Kelsey.Kels.5683", vSN: [ "Angel62866" ], M: false },
     { N: "Krissy", Dis: "", FB: "krissy.awesomeness", vSN: [ "Bassguitar93", "pumpernickelyummy" ], M: false },
     { N: "Kristin", Dis: "", FB: "KristinSkyline", vSN: [ "krisanka" ], M: false },
