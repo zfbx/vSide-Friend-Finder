@@ -53,7 +53,7 @@ $( "#usersearch" ).keyup(function() {
                       </div>`;
                     }
                     if (user.N !== "?") {
-                        res += `<h3>${user.N}</h3>`;
+                        res += `<h4>${user.N}</h4>`;
                     }
                     for (i=0; i< user.vSN.length; i++) {
                         if (user.vSN[i].toLowerCase().includes(searchVal.toLowerCase())) {
