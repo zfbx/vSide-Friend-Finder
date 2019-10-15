@@ -1,6 +1,6 @@
 const options = {
     caseSensitive: false,
-    excludedKeys: ['Discord', 'Facebook', 'Name'],
+    excludedKeys: ['Dis', 'FB', 'N'],
 }
 
 const customFind = (collection, term, opts) => {
@@ -18,8 +18,8 @@ const customFind = (collection, term, opts) => {
 }
 
 function compare(a, b){
-    a = a.Name.toLowerCase();
-    b = b.Name.toLowerCase();
+    a = a.N.toLowerCase();
+    b = b.N.toLowerCase();
     if (a == "?") return 1;
     if (a > b) return 1;
     if (b > a) return -1;
@@ -47,28 +47,28 @@ $( "#usersearch" ).keyup(function() {
     found.forEach(user => {
         res += `<div class="card card-sm m-3 d-flex d-flex-row" style="flex-direction: row;">
                 <div class="p-2 flex-grow-1">`;
-                    if (user.Missing) {
+                    if (user.M) {
                         res += `<div class="alert alert-warning" role="alert">
                         I don't know who this is, do you? Tell Tony on Discord or <a href="https://github.com/vSide/Friend-Finder/issues/new" target="_blank" class="alert-link">post here</a>.
                       </div>`;
                     }
-                    if (user.Name !== "?") {
-                        res += `<h3>${user.Name}</h3>`;
+                    if (user.N !== "?") {
+                        res += `<h3>${user.N}</h3>`;
                     }
-                    for (i=0; i< user.vSideNames.length; i++) {
-                        if (user.vSideNames[i].toLowerCase().includes(searchVal.toLowerCase())) {
-                            res += `<a href="#" class="badge badge-info">${user.vSideNames[i]}</a>`;
+                    for (i=0; i< user.vSN.length; i++) {
+                        if (user.vSN[i].toLowerCase().includes(searchVal.toLowerCase())) {
+                            res += `<a href="#" class="badge badge-info">${user.vSN[i]}</a>`;
                         } else {
                             //res += `<a href="#" class="badge badge-dark">${user.OldNames[i]}</a>`;
                         }
                     };
                 res += `</div>`;
                 res += `<div class="p-2 flex-shrink-1 social">`;
-                    if (user.Discord !== "") {
-                        res += `<a href="https://discordapp.com/users/${user.Discord}" rel="nofollow" target="_blank" title="Open profile in discord (Only shows if you're in the server)"><i class="fab fa-discord"></i></a>`;
+                    if (user.Dis !== "") {
+                        res += `<a href="https://discordapp.com/users/${user.Dis}" rel="nofollow" target="_blank" title="Open profile in discord (Only shows if you're in the server)"><i class="fab fa-discord"></i></a>`;
                     }
-                    if (user.Facebook !== "") {
-                        res += `<a href="https://www.facebook.com/${user.Facebook}" rel="nofollow" target="_blank" title="Open Facebook profile"><i class="fab fa-facebook-square"></i></a>`;
+                    if (user.FB !== "") {
+                        res += `<a href="https://www.facebook.com/${user.Fb}" rel="nofollow" target="_blank" title="Open Facebook profile"><i class="fab fa-facebook-square"></i></a>`;
                     }
                 res += `</div></div>`;
     });
