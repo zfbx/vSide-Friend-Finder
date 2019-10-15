@@ -327,7 +327,7 @@ var users = [
 
 const options = {
     caseSensitive: false,
-    excludedKeys: ['Discord', 'Facebook'],
+    excludedKeys: ['Discord', 'Facebook', 'Name'],
 }
 
 const customFind = (collection, term, opts) => {
