@@ -1,0 +1,58 @@
+body {
+    background: #144566 url('./bg_home.jpg') repeat-x;
+    color: #fefefe;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-control-borderless {
+    border: none;
+}
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+html.dark-mode input[type=text], html.dark-mode textarea {
+    border-color: rgba(0,0,0,0.8);
+    background-color: #1d1d1d;
+    color: #d6d6d6;
+}
+.card {
+    border-color: rgba(0,0,0,0.8);
+}
+.card-footer {
+    background-color: #1d1d1d;
+}
+.badge-inf {
+    background-color: #1d1d1d;
+    color: #d6d6d6;
+}
+.nav-tabs .nav-link.active {
+    color: #d6d6d6;
+    background-color: #1d1d1d;
+}
+.badge {
+    margin: 2px;
+}
+h2, h3 {
+    color: #31a9d0;
+}
+a {
+    color: #ff3bab;
+}
+a:hover {
+    color: #e63499;
+}
+
+.social a {
+    display: block;
+    font-size: 20px;
+    margin: 2px;
+}
+.social a:hover {
+    text-decoration: none;
+}
+.social a i {
+    display: block;
+    font-size: 20px;
+    margin: 2px;
+}
