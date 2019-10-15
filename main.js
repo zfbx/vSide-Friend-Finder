@@ -8,7 +8,7 @@ var users = [
     {Name: "Alyx", Discord: "355147909425135617", Facebook: "", OldNames: [
         "--Gabby_Likey--", "phobeastily"
     ]},
-    {Name: "Rick", Discord: "561422702221721611", Facebook: "", OldNames: [
+    {Name: "Rick", Discord: "561422702221721611", Facebook: "profile.php?id=1242893303", OldNames: [
         "Vandetta", "iReckless"
     ]},
     {Name: "Zay", Discord: "334451704563236867", Facebook: "", OldNames: [
@@ -361,10 +361,10 @@ $( "#usersearch" ).keyup(function() {
     } else if (searchVal == "") {
         $("#results").html("");
         return;
-    } else if (searchVal.length < 2) {
+    }/* else if (searchVal.length < 2) {
         $("#results").html("");
         return;
-    }
+    }*/
     preVal = searchVal;
     const found = customFind(users, searchVal, options);
     found.sort(compare);
