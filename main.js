@@ -68,7 +68,7 @@ $( "#usersearch" ).keyup(function() {
                         res += `<a href="https://discordapp.com/users/${user.Dis}" rel="nofollow" target="_blank" title="Open profile in discord (Only shows if you're in the server)"><i class="fab fa-discord"></i></a>`;
                     }
                     if (user.FB !== "") {
-                        res += `<a href="https://www.facebook.com/${user.Fb}" rel="nofollow" target="_blank" title="Open Facebook profile"><i class="fab fa-facebook-square"></i></a>`;
+                        res += `<a href="https://www.facebook.com/${user.FB}" rel="nofollow" target="_blank" title="Open Facebook profile"><i class="fab fa-facebook-square"></i></a>`;
                     }
                 res += `</div></div>`;
     });
