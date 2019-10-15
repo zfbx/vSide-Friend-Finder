@@ -49,7 +49,7 @@ $( "#usersearch" ).keyup(function() {
                 <div class="p-2 flex-grow-1">`;
                     if (user.Missing) {
                         res += `<div class="alert alert-warning" role="alert">
-                        I don't know who this is, do you? Tell Tony on Discord or <a href="https://github.com/vSide/Friend-Finder/issues/new" class="alert-link">post here</a>.
+                        I don't know who this is, do you? Tell Tony on Discord or <a href="https://github.com/vSide/Friend-Finder/issues/new" target="_blank" class="alert-link">post here</a>.
                       </div>`;
                     }
                     if (user.Name !== "?") {
@@ -74,7 +74,8 @@ $( "#usersearch" ).keyup(function() {
     });
 
     if (res === "") {
-        res = "No vSiders Found"
+        res = `<h2 class="mt-3 text-center">${searchVal} Could Not Be Found.</h2>
+        <p class="text-center mt-1">Would you like them to be added? Ping Tony in the Discord or <a href="https://github.com/vSide/Friend-Finder/issues/new" target="_blank">post here</a>.</p>`;
     }
 
     $("#results").html(res);
